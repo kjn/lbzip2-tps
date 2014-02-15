@@ -1,0 +1,12 @@
+lbzip2 decompression test based on
+PROTOS Genome Test Suite c10-archive
+http://www.ee.oulu.fi/research/ouspg/protos/testing/c10/archive/
+
+PROTOS Genome Test Suite c10-archive contains 321,818 test cases for
+bz2 decompression, which are used to test correctness of lbzip2
+decompression code.
+
+Each test case has a unique ID, which is MD5 hash of bz2 payload.
+Test cases which payloads are expected to decompress successfully have
+content hash, which is MD5 hash of decompressed payload.  Test cases
+which are expected not to decompress correctly have no content ID.
