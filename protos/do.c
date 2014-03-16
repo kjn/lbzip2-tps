@@ -431,7 +431,7 @@ main()
   }
 
   printf("                                          \r");
-  printf("Test run finished.");
-  printf("Thedre were %u failures.", num_fail);
+  printf("Test run finished.\n");
+  printf("There were %u failures.\n", num_fail);
   return 0;
 }
