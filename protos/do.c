@@ -193,6 +193,14 @@ main()
   unsigned j;
   off_t offset;
 
+  printf("Testing executable: %s\n", COMMAND_PATH);
+  printf("With arguments:\n");
+  for (i = 0; cmd[i] != NULL; i++)
+    printf("    %s\n", cmd[i]);
+  printf("With environment:\n");
+  for (i = 0; env[i] != NULL; i++)
+    printf("    %s\n", env[i]);
+
   fd = open("control", O_RDONLY);
   fstat(fd, &stat);
   if (stat.st_size % 76 != 0)
