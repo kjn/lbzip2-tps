@@ -10,3 +10,16 @@ Each test case has a unique ID, which is MD5 hash of bz2 payload.
 Test cases which payloads are expected to decompress successfully have
 content hash, which is MD5 hash of decompressed payload.  Test cases
 which are expected not to decompress correctly have no content ID.
+
+To run the tests a binary file containing test data is required.  It
+can be downloaded from:
+
+    http://archive.lbzip2.org/protos/blob.bz2
+
+This file is compressed with lbzip2 and has to be decompressed before
+running tests.
+
+Test data is free software and it is available under the same terms as
+other files (GNU GPL).  Source code can be downloaded from:
+
+    http://archive.lbzip2.org/protos/source.bz2
